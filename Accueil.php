@@ -6,7 +6,7 @@ class Accueil extends MY_Controller {
 	public function index()
 	{
         $this->load->model('commerce_model');
-        $this->load->model('ville_model');
+        $this->load->model('VIVELOM');
 
         $villes = $this->commerce_model->get_villes();
 
@@ -20,7 +20,7 @@ class Accueil extends MY_Controller {
 
         $data['total_commerces'] = $this->commerce_model->total_commerces();
         $data['total_villes'] = $this->commerce_model->total_villes();
-
+ 
 		$this->load->view('index', $data);
     }
 }
