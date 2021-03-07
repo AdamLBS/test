@@ -22,5 +22,9 @@ class Accueil extends MY_Controller {
         $data['total_villes'] = $this->commerce_model->total_villes();
 
 		$this->load->view('index', $data);
+
+        /**
+         * J'ai ajouté un commentaire
+         */
     }
 }
